@@ -16,19 +16,19 @@ return [
     'currency_symbol' => env('APP_CURRENCY_SYMBOL', '$'),
     'currency_symbol_position' => env('APP_CURRENCY_SYMBOL_POSITION', 'left'),
 
-    'stripe_key' => 'pk_test_51JAbnoDHsbz9CBNMjbDtUrA8pfBWkC9yvXqzFQYHeEJokRKFvpAedEruhqCxJhzqOflDi0KH1E020J5kitkMWV4q00fl2LBk6p',
-    'stripe_secret' => 'sk_test_51JAbnoDHsbz9CBNM3FjZDwFH9rC3sr8q06vu9dDS0cjzY0o7a0VnC5KbcED1YUAEcryuro0xkDUKq8rKqVi1R9SX00idI7OL7i',
-    'stripe_webhook_secret' => 'whsec_zH3RykA7qTcP8tWuSmxSl9lTHLzQHyTV',
+    'stripe_key' => 'xxx',
+    'stripe_secret' => 'xxx',
+    'stripe_webhook_secret' => 'xxx',
     'stripe_active' => false,
 
-    'razorpay_key' => 'rzp_test_V7zKmP7nti57DU',
-    'razorpay_secret' => '3cbGRKMlwixOtuLXXdaHkrfn',
+    'razorpay_key' => 'xxx',
+    'razorpay_secret' => 'xxx',
     'razorpay_active' => false,
 
-    'paystack_public_key' => 'sk_test_13cb7967851092da5996bab4cfe4f834e5795895',
-    'paystack_secret_key' => 'pk_test_934e46b979e2f764fe7e0fd411cb07c1771ad200',
+    'paystack_public_key' => 'xxx',
+    'paystack_secret_key' => 'xxx',
     'paystack_payment_url' => 'https://api.paystack.co',
-    'merchant_email' => 'devboyarif@gmail.com',
+    'merchant_email' => 'applymeta6@gmail.com',
     'paystack_active' => false,
 
     'store_id' => '',
@@ -54,8 +54,8 @@ return [
     'mollie_key' => 'test_Q9JvB3aM6e2Wkc92QjpBV3k88AF3x6',
     'mollie_active' => false,
 
-    'paypal_sandbox_client_id' => 'Aa5dMaGzSheN82k47r5ZzdlbhGZavLnybxbcjBiKuQAM-2l27ANG7w3PHlzLwi2aNeyT7uCgPGTCrblg',
-    'paypal_sandbox_client_secret' => 'EE3hQ9KwbPOQ_PNZUjZ_prJgHc0NKVgWcV7qgZkGgm0oPB9M0XcmsixnC8g-PmAG8i46L_6YMRR1hs8O',
+    'paypal_sandbox_client_id' => 'xxx-2l27ANG7w3PHlzLwi2aNeyT7uCgPGTCrblg',
+    'paypal_sandbox_client_secret' => 'xxx-PmAG8i46L_6YMRR1hs8O',
     'paypal_live_client_id' => '',
     'paypal_live_client_secret' => '',
     'paypal_live_mode' => 'sandbox',
