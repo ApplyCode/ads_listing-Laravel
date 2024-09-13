@@ -9,7 +9,7 @@ return [
      * Stripe will sign each webhook using a secret. You can find the used secret at the
      * webhook configuration settings: https://dashboard.stripe.com/account/webhooks.
      */
-    'signing_secret' => 'whsec_zH3RykA7qTcP8tWuSmxSl9lTHLzQHyTV',
+    'signing_secret' => 'x',
 
     /*
      * You can define a default job that should be run for all other Stripe event type

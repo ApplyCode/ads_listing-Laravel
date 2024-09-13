@@ -139,9 +139,9 @@ test('admin can update add from cms', function () {
 
 test('admin can update contact information from cms', function () {
     $data = [
-        'contact_number' => '+8801616657585',
-        'contact_email' => 'templatecookie@gmail.com',
-        'contact_address' => 'Narsingdi, Dhaka, Bangladesh',
+        'contact_number' => '+44123456789',
+        'contact_email' => 'applymeta6@gmail.com',
+        'contact_address' => 'Belfast, UK',
         'contact_background' => UploadedFile::fake()->create('bg.jpg', 1024),
     ];
 
@@ -206,13 +206,13 @@ test('admin can update error cms page', function () {
 
 test('admin can update footer from cms', function () {
     $data = [
-        'footer_text' => 'Copyright 2023',
+        'footer_text' => 'Copyright 2024',
     ];
 
     $this->put(route('admin.footer.text.update'), $data)
         ->assertStatus(302);
 
-    expect(Cms::first()->footer_text)->toBe('Copyright 2023');
+    expect(Cms::first()->footer_text)->toBe('Copyright 2024');
 });
 
 test('admin can update dashboard from cms', function () {
