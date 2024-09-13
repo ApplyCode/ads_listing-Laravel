@@ -32,8 +32,8 @@ test('admin can update map', function () {
     $data = [
         'from_preference' => 'true',
         'map_type' => 'leaflet',
-        'map_box_key' => 'pk.eyJ1IjoiZGV2a2hhbGlsMCIsImEiOiJjbDN2NDQybDMxbnVlM2lsdHlramkwNWRxIn0.WWyDML7tKoWPAtgu27jBxQ',
-        'google_map_key' => 'AIzaSyC3m_TyDp94bKpyOxWzojZgcUXYj8DdbBc',
+        'map_box_key' => 'pk.xx.xx',
+        'google_map_key' => 'xxx',
     ];
 
     $this->put(route('module.map.update'), $data)
