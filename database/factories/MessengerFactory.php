@@ -22,7 +22,9 @@ class MessengerFactory extends Factory
         $user_1 = 1;
         $user_2 = Arr::random([2, 3]);
 
-
+        // $user_2 = Arr::random([15, 16]);
+        // $user_2 = Candidate::inRandomOrder()->value('id');
+        // $chat_id = MessengerUser::where('company_id', $user_1)->where('candidate_id', $user_2)->value('id');
 
         $messenger_user_id = MessengerUser::where(function ($query) use ($user_1, $user_2) {
             $query->where(function ($q) use ($user_1, $user_2) {
