@@ -15,9 +15,7 @@ class ReportFactory extends Factory
     public function definition()
     {
         return [
-            'report_from_id' => User::inRandomOrder()->value('id'),
-            'report_to_id' => User::inRandomOrder()->value('id'),
-            'reason' => $this->faker->text,
+
         ];
     }
 }
