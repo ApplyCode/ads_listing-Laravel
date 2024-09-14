@@ -38,12 +38,7 @@ class MessengerFactory extends Factory
         })->value('id');
 
         return [
-            'to_id' => Arr::random([$user_1, $user_2]),
-            'from_id' => Arr::random([$user_1, $user_2]),
-            'body' => $title,
-            'read' => rand(0, 1),
-            'messenger_user_id' => $messenger_user_id,
-            'created_at' => $this->faker->dateTimeBetween($startDate = '-1 years', $endDate = 'now', $timezone = null),
+
         ];
     }
 }
