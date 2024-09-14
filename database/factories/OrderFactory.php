@@ -14,7 +14,9 @@ class OrderFactory extends Factory
     public function definition()
     {
         return [
-
+            'number' => $this->faker->randomNumber(8),
+            'total_price' => $this->faker->numberBetween(25000, 200000),
+            'payment_status' => 1,
         ];
     }
 }
