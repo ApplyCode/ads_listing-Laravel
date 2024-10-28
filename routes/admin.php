@@ -27,7 +27,18 @@ use App\Http\Controllers\StateController;
 use App\Http\Controllers\ThemeController;
 use Illuminate\Support\Facades\Route;
 
-
+Route::prefix('admin')->group(function () {
+    Route::middleware(['guest:admin'])->group(function () {
+        // reset password
+        Route::controller(ForgotPasswordController::class)->group(function () {
+            Route::post('/password/email', 'sendResetLinkEmail')->name('admin.password.email');
+            Route::get('/password/reset', 'showLinkRequestForm')->name('admin.password.request');
+        });
+        Route::controller(ResetPasswordController::class)->group(function () {
+            Route::post('/password/reset', 'reset')->name('admin.password.update');
+            Route::get('/password/reset/{token}', 'showResetForm')->name('admin.password.reset');
+        });
+    });
 
     Route::middleware(['auth:admin'])->group(function () {
         //Dashboard Route
