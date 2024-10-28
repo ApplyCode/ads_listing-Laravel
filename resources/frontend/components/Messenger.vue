@@ -1,4 +1,12 @@
-
+<template>
+    <div class="py-16">
+        <div class="container">
+            <div class="chat-box__wrap h-full md:max-h-[565px]">
+                <div class="flex flex-col gap-6 md:flex-row">
+                    <div class="chat-list dark:bg-gray-900 md:min-w-[312px] border border-gray-50 dark:border-gray-600 rounded-lg overflow-hidden">
+                        <div class="sm:p-6 p-3 border-b border-b-gray-50 dark:border-b-gray-600">
+                            <h2 class="text-gray-900 dark:text-white">{{ __('message_list') }}</h2>
+                        </div>
 
                         <ul class="pb-4 h-[500px] overflow-y-auto">
                             <li v-for="(user, index) in usersList" :key="index" @click="getMessages(user)" class="flex gap-4 items-center justify-between sm:px-6 px-3 py-2 cursor-pointer border-b border-primary-50 " :class="selectedUser.recipient_user_id == user.from_id || selectedUser.recipient_user_id == user.to_id ? 'bg-primary-400 text-white':'hover:bg-primary-50 hover:dark:bg-gray-700'">
