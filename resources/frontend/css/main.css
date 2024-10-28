@@ -1,4 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Nunito:wght@400;600&display=swap");
 
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/devzakir\/Dev\/Zakirsoft\/Projects\/Adlisting\/html\/src\/scss\/abstracts\/_functions\.scss;
+  }
+
+  line {
+    font-family: \000037;
+  }
+}
 
 .bgcolor--primary {
   background-color: #002233 !important;
