@@ -14,19 +14,7 @@
   background-color: #002233 !important;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/devzakir\/Dev\/Zakirsoft\/Projects\/Adlisting\/html\/src\/scss\/abstracts\/_functions\.scss;
-  }
 
-  line {
-    font-family: \0000310;
-  }
-}
-
-.textColor--primary {
-  color: #002233;
-}
 
 @media -sass-debug-info {
   filename {
