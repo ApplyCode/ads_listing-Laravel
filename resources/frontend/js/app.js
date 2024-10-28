@@ -1,12 +1,4 @@
-import 'flowbite';
-import Alpine from 'alpinejs'
-import collapse from '@alpinejs/collapse'
-import ApexCharts from 'apexcharts';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+
 
 window.AOS = AOS
 
